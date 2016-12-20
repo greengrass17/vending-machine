@@ -1,0 +1,15 @@
+{
+  "name": "vending-machine",
+  "version": "1.0.0",
+  "description": "algorithm for vending machine",
+  "main": "main.js",
+  "dependencies": {
+    "chai": "^3.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vu Dao",
+  "license": "ISC"
+}
