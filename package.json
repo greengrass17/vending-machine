@@ -3,12 +3,22 @@
   "version": "1.0.0",
   "description": "algorithm for vending machine",
   "main": "main.js",
-  "dependencies": {
-    "chai": "^3.5.0"
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "chai": "^3.5.0",
+    "eslint": "^3.13.1",
+    "eslint-config-react-app": "^0.5.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-flowtype": "^2.30.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^6.9.0",
+    "mocha": "^3.2.0"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha main.spec.js"
   },
   "author": "Vu Dao",
   "license": "ISC"

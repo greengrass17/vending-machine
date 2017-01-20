@@ -1,5 +1,3 @@
-'use strict'
-
 function VendingMachine(coins) {
   this.coins = coins;
 }
@@ -13,7 +11,9 @@ VendingMachine.prototype.vending = function(price, credit) {
 
   const removeCoins = (result) => {
     for (let prop in result) {
-      this.coins[prop] -= result[prop];
+      if (result.hasOwnProperty(prop)) {
+        this.coins[prop] -= result[prop];
+      }
     }
 
   }
@@ -21,7 +21,9 @@ VendingMachine.prototype.vending = function(price, credit) {
   const sumCredit = (credit) => {
     let sum = 0;
     for (let prop in credit) {
-      sum += +prop * credit[prop];
+      if (credit.hasOwnProperty(prop)) {
+        sum += +prop * credit[prop];
+      }
     }
     return sum;
   }
@@ -32,10 +34,6 @@ VendingMachine.prototype.vending = function(price, credit) {
     }
     if (sumCredit(credit) < price) return false;
     return true;
-  }
-
-  const mod = (num, modulus) => {
-    return num - Math.floor(num / modulus) * modulus
   }
 
   // Check insufficient balance
