@@ -15,7 +15,8 @@
     "eslint-plugin-jsx-a11y": "^3.0.2",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-react": "^6.9.0",
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "typescript": "^3.8.3"
   },
   "scripts": {
     "test": "mocha main.spec.js"
